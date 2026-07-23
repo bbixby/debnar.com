@@ -1,0 +1,15 @@
+# User-agent: * means these rules apply to all search engines (Google, Bing, etc.)
+User-agent: *
+
+# Allow crawling of the entire site
+Allow: /
+
+# Disallow crawling of specific private folders or assets (if applicable)
+# For example, if you don't want search engines indexing your raw CSS/JS files:
+# Disallow: /assets/
+
+# Host: identify the preferred domain
+Host: https://debnar.com
+
+# Sitemap: Tell search engines where your sitemap is located
+Sitemap: https://debnar.com/sitemap.xml
