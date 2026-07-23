@@ -1,61 +1,101 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
+<html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-M5M2TQM');</script>
-  <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debnar.com</title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M5M2TQM');</script>
 
-  <!-- set header for Bootstrap responsive -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Debnar.com</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets\css\style.css">
-  <link rel="icon" type="image/jpg" href="favicon.png"/>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10172665-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <style>
+        /* Modern CSS Reset & Variables */
+        :root {
+            --text-main: #333;
+            --text-muted: #6c757d;
+            --bg-color: #f8f9fa;
+        }
 
-  gtag('config', 'UA-10172665-1');
-</script>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Force footer to bottom */
+        }
+
+        /* Hero Section (Replaces Jumbotron) */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem); /* Fluid typography */
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            animation: fadeIn 2s ease-in;
+        }
+
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: gray;
+        }
+
+        footer a {
+            color: gray;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5M2TQM"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5M2TQM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <div class="jumbotron jumbotron-fluid vertical-center">
-        <div class="container">
-          <h1 class="display-4">Welcome to Debnar.com</h1>
-          <p class="lead fade-in">The slowly evolving personal website of Matt Debnar</p>
-        </div>
-    </div>
+    <main>
+        <h1>Welcome to Debnar.com</h1>
+        <p class="lead">The slowly evolving personal website of Matt Debnar</p>
+    </main>
 
     <footer>
-        <div class="footer">
-            <div class="container text-center">
-            <a class="link-unstyled" style="color:gray"  target="_blank" href="https://github.com/bbixby">Matt Debnar</a>, <a class="link-unstyled" style="color:gray"  target="_blank" href="https://www.linkedin.com/in/debnar/">Columbia Engineering Data Analytics Bootcamp</a>
-            </div>
-            <br>
-        </div>
+        <nav>
+            <a href="https://github.com/bbixby" target="_blank" rel="noopener">Matt Debnar</a> | 
+            <a href="https://www.linkedin.com/in/debnar/" target="_blank" rel="noopener">Columbia Engineering Data Analytics Bootcamp</a>
+        </nav>
     </footer>
-      
-      
-      
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>
